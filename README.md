@@ -1,6 +1,6 @@
 ## Bangalore House Price Prediction
 
-This project predicts real estate prices (houses, apartments, and plots) across **Bangalore**, using data from (https://www.kaggle.com/datasets/sumanbera19/bengaluru-house-price-dataset).
+This project predicts real estate prices (houses, apartments, and plots) across **Bangalore**, using data from https://www.kaggle.com/datasets/sumanbera19/bengaluru-house-price-dataset.
 
 ---
 
@@ -35,7 +35,7 @@ with open('FinalModel.pickle', 'rb') as f:
     model = pickle.load(f)
 
 # Example input
-features = ['Indira Nagar', 1102, 3,'Carpet Area'] /['location',total_sqft, bhk, 'Build Type']
+features = ['Indira Nagar', 1102, 3,'Carpet Area']   //['location',total_sqft, bhk, 'Build Type']
 predicted_price = model.predict([features])
 print(predicted_price)
 ```
